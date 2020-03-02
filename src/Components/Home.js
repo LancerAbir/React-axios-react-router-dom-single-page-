@@ -11,7 +11,7 @@ const Home = () => {
     })
 
     useEffect(() => {
-        axios.get('http://jsonplaceholder.typicode.com/posts/')
+        axios.get('https://jsonplaceholder.typicode.com/posts/')
             .then(res => {
                 setState({
                     posts: res.data.slice(0, 10)
