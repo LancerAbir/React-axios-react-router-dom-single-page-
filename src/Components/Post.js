@@ -10,13 +10,11 @@ const Post = (props) => {
 
     useEffect(() => {
         let id = props.match.params.post_id
-        axios.get('http://jsonplaceholder.typicode.com/posts/' + id)
+        axios.get('https://jsonplaceholder.typicode.com/posts/' + id)
             .then(res => {
                 setState({
                     post: res.data
                 })
-
-
             })
     }, [])
 
